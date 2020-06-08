@@ -1,62 +1,152 @@
+* { padding: 0; margin: 0; border: 0 }
+body {
+    background:url(bg.jpg) #70603a;
+    font-family: "ariel";
+	font-size: 100%;
+	color: #312219;
+}
+a { color: rgb(9, 82, 33);font-family: "ariel";
+    font-size: 100%; }
+ p { color: #000;font-family: "ariel";
+		font-size: 125%; background:#e7eecf; 
+ }
+
+ h1 {color: #fff;
+ font-family: "trebuchet MS";
+ text-shadow: 2px 2px 2px #6d2a15;
+ }
 
 
-H1 {color:#2a8000;
-    font-size: 30pt;
-    text-align:left;
-  
-  }
-  
-  P {
-    font-size: 15pt;
-    padding: 15px;
-    color: #000000
-  }
 
-  h3 {font-size: 15pt;
-    padding: 15px;
-    color:#2a8000;
-    text-align: left;
-    
-   }
-  ul {
-    font-size: 13pt;
-    text-align:left;
-    color:#2a8000;
-  }
-  .box {  
-    width: 1300px;  
-    background: #bbb;  
-    border: 1px solid #000;  
-  }  
-    
-  .box p {  
-    border: 1px dotted #f00;  
-  }  .box .content {  
-    background: url(img/IMG_20200213_120739.jpg) bottom;  
-  }  
-    
-  .box .content p {  
-    border: 1px dotted #f00;  
-  }  .box h2 {           
-    margin: 0;  
-    padding: 0;  
-    overflow: hidden;  
-    height: 30px;  
-  }  
-  div.balra_igazitott
-  {
-  float: left;
-  width: calc(100% - 180px);
-  height: 200px;
-  background-color: #ffff66;
-  border: 0px solid #aaa;
-  }
-  
-  div.jobbra_igazitott
-  {
-  float: right;
-  width: 180px;
-  height: 200px;
-  background-color: #aaddff;
-  border: 0px solid #aaa;
-  }
+ form {
+	border-radius: 10px;
+	text-align:center;
+	padding: 10px 0;
+	margin: 20px 0;
+	background: #0eb331;
+	
+}
+div.clear { clear: both; }
+
+div#wrapper {
+	width: 800px;
+	margin: 20px auto;
+	border-radius: 10px;
+	text-align: center;
+}
+div {text-align: center;}
+header {
+	font-size: 360%;
+	font-weight: bold;
+	color: #fff;
+	font-family: "trebuchet MS";
+    text-shadow: 2px 2px 2px #6d2a15;
+}
+header span { color: rgb(3, 151, 60) }
+footer {
+	font-size: 100%;
+	padding: 10px 0;
+	margin: 20px 0;
+	color: #000;
+	background: #0eb331;
+	text-align: center;
+}
+footer a { margin: 0 15px; 
+
+}
+nav {
+	padding: 10px 0;
+	margin: 20px 0;
+	color: #000;
+	box-shadow: 0px 0px 5px #6d2a15;
+	background:#149249;
+	
+}
+nav a {
+	color: rgb(241, 234, 127);
+	text-decoration: none;
+	margin: 0 10px;
+	font-family: "trebuchet MS"
+}
+nav form {
+	border-radius: 10px;
+	text-align:center;
+	padding: 10px 0;
+	margin: 20px 0;
+	background: #0eb331;
+	
+}
+
+nav a:first-child { margin-left: 20px }
+nav a:hover { text-decoration: underline }
+section {
+	width: 558px;
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0 20px 0 0;
+	font-size: 80%;
+	border-right: 2px  #d8946a
+}
+section article { margin: 0 0 20px 0 }
+section article p {
+	text-align:"justify";
+	line-height: 200%
+}
+section article h1 {
+	color: #fff;
+	font-family: "trebuchet MS";
+	text-shadow: 2px 2px 2px #6d2a15;
+	padding: 0 20px 0 0;
+	font-size: 150%;
+
+}
+	
+aside {
+	float: right;
+	width: 200px;
+    font-size: 100%;
+    background:#e7eecf; 
+}
+figure {
+	padding: 10px;
+	background: #c57240;
+	margin: 0 0 20px 0
+}
+
+figure img { max-width: 100% }
+figure figcaption {
+	font-style: italic;
+	font-size: 150%;
+	margin: 6px 0 0 0
+}
+@media only screen
+and (min-width : 480px)
+and (max-width : 800px) {
+	div#wrapper { width: 600px }
+	header { font-size: 320% }
+	section { width: 408px }
+	aside { width: 150px }
+	footer { width: 560px }
+}
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+	div#wrapper { width: 400px; }
+	header { font-size: 200%; }
+	section { width: 400px; padding: 0; margin: 0; border: 0 }
+	aside { display: none }
+	footer { width: 360px }
+}
+@media only screen
+and (min-width: 240px)
+and (max-width: 320px) {
+	div#wrapper { width: 300px; }
+	header { font-size: 200%; text-align: center }
+	header span { display: block }
+	nav { text-align: center }
+	nav a { margin: 0 3px }
+	nav a:first-child { margin: 0 3px }
+	section { width: 300px; padding: 0; margin: 0; border: 0 }
+	aside { display: none }
+	footer { display: none }
+}
